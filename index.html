@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Lazy load</title>
+	<style type="text/css">
+		h1, p {
+			text-align: center
+		}
+		.container {
+			margin: 0 auto;
+			width: 600px;
+		}
+		img {
+			max-width: 100%;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>Scroll Down!</h1>
+		<h2>Example using Unveil jquery plugin. See on <a href="https://github.com/tuupola/jquery_lazyload" target="_blank">Github</a></h2>
+		<p><img src="load.gif" data-src="http://www.planwallpaper.com/static/images/a601cb579cc9a289bc51cd41d8bcf478_large.jpg" alt=""></p>
+		<p><img src="load.gif" data-src="http://i.imgur.com/ZhGEqAP.jpg" alt=""></p>
+		<p><img src="load.gif" data-src="http://si.wsj.net/public/resources/images/BN-IB385_0424hu_J_20150423202238.jpg" alt=""></p>
+		<p><img src="load.gif" data-src="https://pixabay.com/static/uploads/photo/2015/08/14/08/29/images-888133_640.jpg" alt=""></p>
+		<p><img src="load.gif" data-src="http://economictimes.indiatimes.com/thumb/msid-45891755,width-640,resizemode-4/nasas-images-of-most-remarkable-events-you-cant-miss.jpg" alt=""></p>
+		<p><img src="load.gif" data-src="http://randomstory.org/wp-content/uploads/2013/07/41-Best-and-Coolest-Collection-HD-Wallpapers-Ever-1.jpg" alt=""></p>
+		<p><img src="load.gif" data-src="http://www.planwallpaper.com/static/images/Frozen-Logo-Symbol-HD-Images.jpg" alt=""></p>
+		<p><img src="load.gif" data-src="http://www.planwallpaper.com/static/images/Hawaii-Beach-Wallpaper-HD.jpg" alt=""></p>
+		<p><img src="load.gif" data-src="http://u.cubeupload.com/Syzygos/NMSConceptArtWallpap.png" alt=""></p>		
+	</div>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="js/jquery.unveil.js"></script>
+
+	<script type="text/javascript">
+		$(document).on("ready", function(){
+			$("img").unveil();
+		});
+	</script>
+</body>
+</html>
